@@ -1,196 +1,138 @@
-# 🤖 Lộ Trình Hoàn Hảo Trở Thành Master Agentic Developer 2026
+# 🤖 Action Plan 12 Tuần Trở Thành Master Agentic Developer 2026
 
-**Phiên bản Ultimate v3** — Đã kiểm tra syllabus thực tế trên Coursera (KMS Vietnam) và Udemy (IBM CSR SkillsBuild). Đảm bảo **0% trùng lặp nội dung** giữa các giai đoạn.
+**Phiên bản Ultimate v4 (Action Plan)** — Được xây dựng sau khi đánh giá trực tiếp cấu trúc bài học và Lab trên tài khoản Coursera & Udemy của bạn. Kế hoạch này được tối ưu hóa để loại bỏ 40% thời gian lý thuyết dư thừa, tập trung toàn lực vào Code Thực Chiến.
 
 > [!NOTE]
-> **Tài nguyên học tập (MIỄN PHÍ qua công ty):**
-> - **Coursera Business:** [KMS Vietnam Program](https://www.coursera.org/programs/kms-software-c4ody?authProvider=kms-group)
-> - **Udemy Business (IBM CSR):** [ibmcsr.udemy.com](https://ibmcsr.udemy.com/) — Đã xác minh có sẵn các khóa đề xuất.
->
-> Tổng thời gian dự kiến: **2 – 4 tháng** (học nghiêm túc 2-3 giờ/ngày).
+> **Khung thời gian:** Kéo dài 12 tuần (3 tháng). 
+> **Cam kết:** 2 – 3 giờ mỗi ngày.
+> **Trọng tâm (The Core):** Khóa học của **Eden Marco** (LangChain & LangGraph) trên Udemy.
 
 ---
 
-## ⚠️ Kết Quả Kiểm Tra Chống Trùng Lặp (Overlap Analysis)
-
-Sau khi đọc chi tiết syllabus từng khóa, tôi phát hiện **3 vấn đề nghiêm trọng** từ bản roadmap trước và đã sửa:
-
-| Vấn đề | Chi tiết | Giải pháp |
-|---|---|---|
-| ❌ Gán sai tác giả | Khóa "Agentic AI" trên Coursera là của **Dr. Jules White** (Vanderbilt), 6 giờ, dành cho Leaders — **KHÔNG phải** Andrew Ng và **KHÔNG có code** | Đã chuyển khóa này thành tùy chọn bổ sung (xem nhanh 6 tiếng cho tư duy) |
-| ⚠️ Eden Marco (Udemy) đã bao gồm RAG, LangGraph, MCP, Multi-Agent | Trùng lặp lớn với IBM RAG Certificate (Coursera) nếu học cả hai | **Chọn 1 trong 2** làm trọng tâm — Eden Marco (Udemy) cho code, IBM RAG cho chứng chỉ |
-| ⚠️ Ed Donner (Udemy) cũng dạy LangGraph, CrewAI, MCP | Trùng lặp đáng kể với Eden Marco nếu học cả hai | **Chọn 1 trong 2** — Ed Donner dùng 5 framework (rộng hơn), Eden Marco đi sâu hơn |
-
----
-
-## 🗺️ Sơ Đồ Học Tập Tối Ưu (Không Lãng Phí Effort)
+## 🗺️ Sơ Đồ Kế Hoạch Tuần
 
 ```mermaid
-flowchart TD
-    Start([Bắt đầu]) --> G1
-
-    subgraph G1 ["GĐ1: Nền tảng (Tuần 1-3)"]
-        A1["Coursera: AI Python for Beginners\n(Andrew Ng — Python cơ bản)"]
-        A2["Coursera: GenAI with LLMs\n(DeepLearning.AI — Hiểu LLM)"]
-        A1 --> A2
-    end
-
-    subgraph G2 ["GĐ2: Thực chiến Agentic Dev (Tuần 4-10)"]
-        direction TB
-        B_CHOOSE{"Chọn 1 trong 2 lộ trình"}
-        B_EDEN["Lộ trình A: Eden Marco\n(Udemy — Sâu LangChain/LangGraph)"]
-        B_ED["Lộ trình B: Ed Donner\n(Udemy — Rộng 5 frameworks)"]
-        B_CHOOSE --> B_EDEN
-        B_CHOOSE --> B_ED
-    end
-
-    subgraph G3 ["GĐ3: Chứng chỉ + Bổ sung (Tuần 11-13)"]
-        C1["Coursera: IBM RAG & Agentic AI\n(Chứng chỉ IBM — BỎ QUA phần đã học)"]
-    end
-
-    subgraph G4 ["GĐ4: Portfolio & Xin việc (Tuần 14-16)"]
-        D1["Dự án 1: RAG Chatbot"]
-        D2["Dự án 2: Multi-Agent System"]
-        D3["Deploy + Hồ sơ + Phỏng vấn"]
-        D1 --> D2 --> D3
-    end
-
-    G1 --> G2
-    G2 --> G3
-    G3 --> G4
+gantt
+    title Agentic Developer 12-Week Roadmap
+    dateFormat  YYYY-MM-DD
+    axisFormat  %W
+    
+    section GĐ1: Nền tảng
+    Tuần 1: Cú pháp Python          :done, w1, 2026-07-20, 7d
+    Tuần 2: API & Cấu trúc dữ liệu   :done, w2, after w1, 7d
+    Tuần 3: LLM Architecture (Transformer) :done, w3, after w2, 7d
+    
+    section GĐ2: Thực chiến (Eden Marco)
+    Tuần 4: Core LangChain & Prompting :active, w4, after w3, 7d
+    Tuần 5: Embeddings & VectorDBs     :active, w5, after w4, 7d
+    Tuần 6: Agents & Tool Calling      :active, w6, after w5, 7d
+    Tuần 7: LangGraph Fundamentals     :active, w7, after w6, 7d
+    Tuần 8: Advanced LangGraph (RAG)   :active, w8, after w7, 7d
+    Tuần 9: MCP & Multi-Agent Deploy   :active, w9, after w8, 7d
+    
+    section GĐ3 & 4: Chứng chỉ & Project
+    Tuần 10: Lấy Chứng chỉ IBM RAG     :w10, after w9, 7d
+    Tuần 11: Project 1 (RAG Chatbot)   :w11, after w10, 7d
+    Tuần 12: Project 2 (Đội Agents)    :w12, after w11, 7d
 ```
 
 ---
 
-## 📚 Lộ Trình Chi Tiết (4 Giai Đoạn — Không Trùng Lặp)
+## 📅 Lịch Trình Chi Tiết Từng Tuần & Hướng Dẫn Tối Ưu Tốc Độ
 
-### 🔵 Giai Đoạn 1: Nền Tảng Python & Hiểu LLM (Tuần 1 – 3)
+### 🔵 Giai Đoạn 1: Nền Tảng Code & Kiến Trúc Model (Tuần 1 – 3)
 
-**Mục tiêu:** Viết Python cơ bản + Hiểu cách LLM hoạt động bên trong (Transformer, Tokens, Fine-tuning).
+**Khóa học:** 
+1. [AI Python for Beginners (Coursera)](https://www.coursera.org/programs/kms-software-c4ody/learn/ai-python-for-beginners?authProvider=kms-group)
+2. [Generative AI with LLMs (Coursera)](https://www.coursera.org/programs/kms-software-c4ody/learn/generative-ai-with-llms?authProvider=kms-group)
 
-| Khóa học | Tác giả | Giờ học | Nội dung DUY NHẤT (không trùng GĐ khác) |
-|---|---|---|---|
-| [AI Python for Beginners](https://www.coursera.org/programs/kms-software-c4ody/learn/ai-python-for-beginners?authProvider=kms-group) | Andrew Ng (Coursera) | ~17h | Python cơ bản, biến, hàm, loop, API calls, Jupyter. **Không dạy LangChain/RAG.** |
-| [Generative AI with Large Language Models](https://www.coursera.org/programs/kms-software-c4ody/learn/generative-ai-with-llms?authProvider=kms-group) | DeepLearning.AI & AWS (Coursera) | ~17h | Transformer architecture, Training lifecycle, Fine-tuning, RLHF, Scaling laws. **Không dạy Agent/Tool calling.** |
+#### Tuần 1: Nhập môn Python & Function
+- **Nhiệm vụ:** Hoàn thành Module 1 & 2 (AI Python khóa 1).
+- **Video:** Tua nhanh `1.5x` nếu đã quen tư duy logic lập trình.
+- **Bắt buộc:** Làm `Quiz 1` và `Programming Assignment: Working with a Virtual Library`. Không skip!
 
-> [!IMPORTANT]
-> **Tại sao 2 khóa này không trùng nhau?**
-> - AI Python: Dạy **cách viết code Python** (syntax, functions, API).
-> - GenAI with LLMs: Dạy **cách LLM hoạt động bên trong** (model architecture, training).
-> - **Không khóa nào đụng tới LangChain, RAG, hay Agent** — đó là nội dung GĐ2.
+#### Tuần 2: Thao tác Dữ liệu & Call API
+- **Nhiệm vụ:** Hoàn thành Module 3 & 4 (AI Python khóa 1).
+- **Trọng tâm:** Chú ý kỹ cách gọi thư viện (package) và API. Đây là tiền đề sống còn để làm việc với API của OpenAI ở các tuần sau.
+- **Bắt buộc:** Hoàn thành 3 Assignment còn lại.
+
+#### Tuần 3: Giải phẫu LLM (Bên trong hộp đen)
+- **Nhiệm vụ:** Hoàn thành Week 1 & 2 của khóa "Generative AI with LLMs".
+- **Video:** Xem tốc độ bình thường (Normal speed) đoạn giảng về **Transformer Architecture, Attention Is All You Need, và Scaling Laws**.
+- **Tối ưu:** Skip Week 3 (RLHF) nếu thấy quá nặng về học thuật; quay lại xem sau nếu rảnh.
+- **Bắt buộc:** Làm **Lab 1 - Summarize Dialogue**. Bài Lab này sử dụng môi trường AWS, giúp bạn quen tay với Jupyter Notebook trên Cloud.
 
 ---
 
-### 🟢 Giai Đoạn 2: Thực Chiến Agentic Dev (Tuần 4 – 10) — CHỌN 1 TRONG 2
+### 🟢 Giai Đoạn 2: Thực Chiến Code LangChain & LangGraph (Tuần 4 – 9)
 
-**Mục tiêu:** Code thực tế với LangChain, RAG, LangGraph, Agent, MCP. Đây là giai đoạn **cốt lõi**, chiếm 80% effort.
+**Khóa học:** **Agentic AI Engineering with LangChain & LangGraph (Eden Marco)** trên Udemy Business (IBM CSR).
 
 > [!CAUTION]
-> **ĐỪNG học cả 2 khóa dưới đây.** Chúng trùng nhau ~60% nội dung (cả hai đều dạy LangChain, RAG, LangGraph, Agent). Chọn 1 dựa trên phong cách học của bạn.
+> ĐÂY LÀ GIAI ĐOẠN QUAN TRỌNG NHẤT LỘ TRÌNH. Tuyệt đối không học kiểu "Cưỡi ngựa xem hoa". Phải pause video, mở IDE (VS Code) ra gõ lại code theo giảng viên.
 
-#### 🅰️ Lộ trình A: Eden Marco (Đi sâu — Khuyến nghị)
-| Khóa học | Tác giả | Giờ học | Nội dung |
-|---|---|---|---|
-| **LangChain- Agentic AI Engineering with LangChain & LangGraph** | Eden Marco (Udemy CSR) ✅ | ~20h | Prompt Engineering → RAG (Embeddings, VectorDB) → ReAct Agents → LangGraph (Reflection, Agentic RAG) → MCP → Multi-Agent → Production deployment |
+#### Tuần 4: Core LangChain & Prompt Engineering
+- **Nội dung:** Bài giảng Setup, "The Gist of LangChain", Few-Shot & Chain of Thought prompting.
+- **Nhiệm vụ:** Build thành công "Hello World" chain và gọi được OpenAI API bằng Python.
 
-**Ai nên chọn:** Muốn đi sâu, hiểu bản chất, code production-ready. Cộng đồng Discord hỗ trợ tốt.
+#### Tuần 5: Embeddings, VectorDB & RAG Cơ Bản
+- **Nội dung:** Data Loaders, Text Splitters, Embeddings models (OpenAI), VectorDBs (Chroma/Pinecone), Retrieval.
+- **Nhiệm vụ:** Xây dựng ứng dụng **Documentation Assistant** đầu tiên. Bạn tải PDF vào và chat với nó.
 
-#### 🅱️ Lộ trình B: Ed Donner (Đi rộng — 5 frameworks)
-| Khóa học | Tác giả | Giờ học | Nội dung |
-|---|---|---|---|
-| **AI Engineer Agentic Track: The Complete Agent & MCP Course** | Ed Donner (Udemy CSR) ✅ | ~21h | OpenAI Agents SDK → CrewAI → LangGraph → AutoGen → MCP. 8 dự án thực tế (brochure generator, customer support agent, trading simulation) |
+#### Tuần 6: ReAct Agents & Tools
+- **Nội dung:** Tool calling, Search Agents, ReAct Agents.
+- **Nhiệm vụ:** Tự code một "Slim ChatGPT Code-Interpreter" hoặc Agent có khả năng lên Google search kết quả thời tiết/cổ phiếu real-time.
 
-**Ai nên chọn:** Muốn trải nghiệm nhiều framework khác nhau, thích học qua project-based. Tốt cho ai chưa biết mình thích framework nào.
+#### Tuần 7: LangGraph — Nâng tầm kiểm soát (Fundamentals)
+- **Nội dung:** State-based design, Nodes, Edges, Graph compilation.
+- **Mục tiêu:** Hiểu vì sao LangChain thông thường rất khó control và tại sao ta cần State-machine của LangGraph.
 
-#### So sánh chi tiết 2 lộ trình:
-| Tiêu chí | Eden Marco (A) | Ed Donner (B) |
-|---|---|---|
-| Frameworks chính | LangChain + LangGraph (sâu) | OpenAI SDK + CrewAI + LangGraph + AutoGen + MCP (rộng) |
-| Phong cách | Đi sâu 1 hệ sinh thái | Thử nhiều framework, 8 projects |
-| RAG coverage | Sâu (Embeddings, VectorDB, Agentic RAG) | Có nhưng ít chi tiết hơn |
-| MCP coverage | Có | Có (dedicated module) |
-| Reddit đánh giá | ⭐ "Production-ready, kỹ sư thực thụ" | ⭐ "Heavy-coding, rèn tay nghề" |
+#### Tuần 8: LangGraph Chuyên Sâu (Agentic RAG & Reflexion)
+- **Nội dung:** Reflection Agents (Agent tự chấm điểm và tự sửa lỗi code của chính nó), Self-correcting RAG.
+- **Nhiệm vụ:** Xây dựng luồng Agentic RAG (Kiểm tra dữ liệu tìm được -> Nếu sai, tự động đổi câu hỏi tìm lại -> Nếu đúng, sinh câu trả lời).
+
+#### Tuần 9: Model Context Protocol (MCP), Multi-Agent & Production
+- **Nội dung:** Giới thiệu chuẩn MCP mới nhất, setup Hệ thống Multi-Agent (Nhiều Agent làm việc với nhau), và best practices khi deploy.
 
 ---
 
-### 🔷 Giai Đoạn 3: Chứng Chỉ IBM + Bổ Sung Kiến Thức (Tuần 11 – 13)
-
-**Mục tiêu:** Lấy chứng chỉ IBM để dán LinkedIn, và **chỉ học những phần mà GĐ2 chưa cover**.
-
-| Khóa học | Tác giả | Tổng giờ | Cách học tối ưu |
-|---|---|---|---|
-| [IBM RAG and Agentic AI Professional Certificate](https://www.coursera.org/programs/kms-software-c4ody/professional-certificates/ibm-rag-and-agentic-ai?authProvider=kms-group) | IBM (Coursera) | ~101h (10 courses) | **BỎ QUA** các course trùng lặp với GĐ2. Xem bảng dưới ↓ |
-
-#### Hướng dẫn học tối ưu IBM RAG Certificate (tránh lãng phí):
-
-| Sub-course | Giờ | Nếu đã học Eden Marco (A) | Nếu đã học Ed Donner (B) |
-|---|---|---|---|
-| 1. Develop GenAI Applications: Get Started | 10h | ⏭️ Lướt nhanh (đã biết) | ⏭️ Lướt nhanh |
-| 2. Build RAG Applications: Get Started | 7h | ⏭️ **Bỏ qua** (đã học kỹ) | ⚡ Xem phần RAG pipeline |
-| 3. Vector Databases for RAG | 9h | ⏭️ **Bỏ qua** (đã học kỹ) | ⚡ Xem Chroma/Pinecone |
-| 4. Advanced RAG with Retrievers | 8h | ⚡ **NÊN HỌC** — Reranking, Hybrid Search | ⚡ **NÊN HỌC** |
-| 5. Multimodal GenAI Applications | 8h | ✅ **NÊN HỌC** — Hoàn toàn mới! | ✅ **NÊN HỌC** |
-| 6. Fundamentals of Building AI Agents | 11h | ⏭️ **Bỏ qua** (đã học kỹ) | ⏭️ Bỏ qua |
-| 7. Agentic AI with LangChain & LangGraph | 11h | ⏭️ **Bỏ qua** (trùng 90%) | ⚡ Ôn lại LangGraph |
-| 8. Agentic AI with CrewAI, AutoGen, BeeAI | 13h | ⚡ **NÊN HỌC** — CrewAI/AutoGen mới! | ⏭️ **Bỏ qua** (đã học kỹ) |
-| 9. Build AI Agents using MCP | 10h | ⏭️ Lướt nhanh (đã biết) | ⏭️ Lướt nhanh |
-| 10. Capstone Project | 14h | ✅ **LÀM** — Để lấy chứng chỉ | ✅ **LÀM** |
+### 🔷 Giai Đoạn 3: Vượt Cấp Chứng Chỉ IBM RAG (Tuần 10)
 
 > [!TIP]
-> **Nếu chọn lộ trình A (Eden Marco):** Bạn chỉ cần học kỹ Course 4, 5, 8, 10 = **~43 giờ** thay vì 101 giờ. Tiết kiệm **~58 giờ** effort!
-> **Nếu chọn lộ trình B (Ed Donner):** Bạn chỉ cần học kỹ Course 4, 5, 10 + lướt Course 2, 3 = **~54 giờ**. Tiết kiệm **~47 giờ**!
+> **Thủ Thuật Vượt Cấp (Bypass Certificate):** 
+> Vì bạn đã có kiến thức sâu thẳm từ 6 tuần cày ải khóa của Eden Marco, bạn không cần (và không nên) xem lại video của 10 khóa IBM từ đầu. Dưới đây là cách qua môn siêu tốc:
 
-#### Khóa bổ sung tùy chọn (nếu muốn thêm tư duy):
-| Khóa học | Tác giả | Giờ | Ghi chú |
-|---|---|---|---|
-| [Agentic AI and AI Agents: A Primer for Leaders](https://www.coursera.org/programs/kms-software-c4ody/learn/agentic-ai?authProvider=kms-group) | Dr. Jules White, Vanderbilt (Coursera) | 6h | Beginner, dành cho managers. Tốt để hiểu tư duy "Agent là gì" nhanh. **Không có code.** |
+**Khóa học:** [IBM RAG and Agentic AI Professional Certificate](https://www.coursera.org/programs/kms-software-c4ody/professional-certificates/ibm-rag-and-agentic-ai?authProvider=kms-group)
 
----
+- **Bước 1 (Khoá 1-3 & 6-7):** Nhảy thẳng vào phần **Grades** (Điểm số), mở thẳng các bài **Quiz và Assignment cuối kỳ** để làm luôn. Với kiến thức từ GĐ2, bạn sẽ dễ dàng qua bài.
+- **Bước 2 (Khoá 4 & 5 - RAG Nâng cao & Multimodal):** Dành 2 ngày xem lướt video về **Reranking, Hybrid Search, và Image/Audio Processing** — đây là 2 mảng Eden Marco ít nói sâu.
+- **Bước 3 (Khoá 8 - CrewAI):** Xem nhanh cách viết code CrewAI (rất đơn giản so với LangGraph).
+- **Bước 4 (Khoá 10 - Capstone Project):** Dành 3 ngày làm nghiêm túc để Coursera cấp chứng chỉ chuyên nghiệp (Professional Certificate).
 
-### 🔴 Giai Đoạn 4: Portfolio & Xin Việc (Tuần 14 – 16)
-
-**Mục tiêu:** Có 2 sản phẩm thực tế + Deploy + Sẵn sàng phỏng vấn.
-
-#### Dự án bắt buộc:
-| # | Dự án | Công nghệ | Mô tả |
-|---|---|---|---|
-| 1 | **RAG Chatbot** | LangChain + OpenAI + ChromaDB | Chatbot tư vấn luật lao động VN hoặc quy định công ty. Đọc PDF, trả lời chính xác. |
-| 2 | **Multi-Agent System** | CrewAI hoặc LangGraph | Đội Agent: (1) Thu thập tin tức, (2) Phân tích tài chính, (3) Viết báo cáo. |
-
-#### Deploy & Hồ sơ:
-* **Deploy:** Streamlit Community Cloud hoặc Vercel.
-* **CV Keywords:** `AI Agent`, `LangChain`, `LangGraph`, `CrewAI`, `RAG`, `LLMs`, `MCP`.
-* **Nền tảng tìm việc:** ITviec (Remote), TopCV, Indeed, LinkedIn, Upwork.
+*Tài liệu NÊN HỌC ở GĐ3 này được dùng như Bách Khoa Toàn Thư. Lấy kiến thức để đắp ngay vào Giai Đoạn 4.*
 
 ---
 
-## ⚖️ Chiến Lược Tối Ưu: Coursera vs Udemy (80/20)
+### 🔴 Giai Đoạn 4: Tự Build Portfolio & Xin Việc (Tuần 11 – 12)
 
-> [!TIP]
-> **Quy tắc vàng:**
-> 1. **GĐ1 — Coursera (100%):** Dành 3 tuần đầu cho Python + LLM Fundamentals. Không tìm đâu có nội dung tốt hơn Andrew Ng + DeepLearning.AI.
-> 2. **GĐ2 — Udemy (100%):** Dành 6 tuần cày 1 khóa duy nhất (Eden Marco HOẶC Ed Donner). **Đây là nơi bạn thực sự thành kỹ sư.** 80% năng lực của bạn đến từ giai đoạn này.
-> 3. **GĐ3 — Coursera (chọn lọc):** Chỉ học các sub-course **KHÔNG trùng** với GĐ2. Mục đích chính: **lấy chứng chỉ IBM** cho LinkedIn.
-> 4. **GĐ4 — Tự build:** Không khóa học nào. Chỉ code, deploy, và xin việc.
+**Mục tiêu:** Không còn người hướng dẫn, không còn video. Bạn tự tay tạo ra 2 sản phẩm mang tính thương mại.
 
----
+#### Tuần 11: Dự Án 1 - Production-Ready RAG Chatbot
+- **Yêu cầu:** 
+  - Giao diện: Streamlit.
+  - Data: Bộ luật Lao động VN (hoặc File Handbook quy chế công ty).
+  - Feature: Có Reranking, có trích dẫn nguồn (Citation) như Perplexity.
+- **Thành quả:** Đưa source code lên GitHub `NL` hiện tại. Thêm file README có screenshot giao diện.
 
-## 📋 Tổng Hợp Effort Thực Tế
+#### Tuần 12: Dự Án 2 - Đội Đặc Nhiệm Agent (Multi-Agent System)
+- **Yêu cầu:** Dùng LangGraph hoặc CrewAI thiết lập 1 nhóm 3 agents:
+  1. **Researcher Agent:** Dùng MCP hoặc search tool để quét tin tức công nghệ.
+  2. **Analyst Agent:** Đánh giá xu hướng từ tin tức.
+  3. **Writer Agent:** Viết bài blog chuẩn SEO từ đánh giá trên.
+- **Thành quả:** Chạy script và xuất ra 1 bài viết hoàn chỉnh. Ghi hình (Record video) quá trình chạy terminal/UI và đính kèm CV.
 
-| Giai đoạn | Giờ học thực tế | Nền tảng | Giá trị chính |
-|---|---|---|---|
-| GĐ1 | ~34 giờ | Coursera (KMS) | Nền tảng Python + LLM |
-| GĐ2 | ~20 giờ | Udemy (IBM CSR) | Kỹ năng code Agentic thực tế |
-| GĐ3 | ~43-54 giờ (đã tối ưu) | Coursera (KMS) | Chứng chỉ IBM + Multimodal + Advanced RAG |
-| GĐ4 | ~40 giờ tự code | N/A | Portfolio + Deploy |
-| **Tổng** | **~137-148 giờ** | | **~2.5-3 tháng** (2h/ngày) |
-
----
-
-## 🛡️ Lời Khuyên Từ Reddit (r/AI_Agents, r/LangChain)
-
-> [!WARNING]
-> - **Chứng chỉ ≠ Năng lực:** Nhà tuyển dụng đánh giá portfolio thực tế hơn tờ chứng chỉ. Nhưng chứng chỉ IBM vẫn rất tốt cho LinkedIn.
-> - **Eden Marco vs. Ed Donner:** Cả hai đều top-tier. Chọn 1 dựa trên phong cách, **ĐỪNG học cả hai** vì trùng 60%.
-> - **Thoát Tutorial Hell:** Ở GĐ3, bạn chỉ nên coi các nội dung "Nên học" như tài liệu tra cứu. Hãy học chúng **song song** với việc build dự án cá nhân ở GĐ4 (áp dụng ngay vào code). Đừng thụ động ngồi cày nốt chứng chỉ rồi mới bắt đầu làm project.
-> - **LangChain cập nhật liên tục:** Luôn kết hợp đọc Docs chính thức song song với video.
+### 🚀 Hành Trang Đi Phỏng Vấn (Hết 12 tuần)
+1. **CV của bạn đã có Keywords xịn:** `LangChain, LangGraph, CrewAI, RAG, ChromaDB, Prompt Engineering, Agentic Workflows, MCP`.
+2. **Chứng chỉ:** *IBM RAG and Agentic AI Professional Certificate*.
+3. **Minh chứng năng lực:** 2 link GitHub chứa dự án thật có Screenshot/Video, không phải tutorial code rác.
+4. Bạn hoàn toàn tự tin nộp đơn vị trí: **AI Engineer, LLM Developer, Backend Developer (AI Focus)** trên ITviec hoặc Remote.
