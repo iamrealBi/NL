@@ -17,23 +17,23 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %W
     
-    section GĐ1: Nền tảng
-    Tuần 1: Cú pháp Python          :done, w1, 2026-07-20, 7d
-    Tuần 2: API & Cấu trúc dữ liệu   :done, w2, after w1, 7d
-    Tuần 3: LLM Architecture (Transformer) :done, w3, after w2, 7d
+    section GĐ1 Nền tảng
+    Tuần 1 Cú pháp Python          :done, w1, 2026-07-20, 7d
+    Tuần 2 API & Cấu trúc dữ liệu   :done, w2, after w1, 7d
+    Tuần 3 LLM Architecture        :done, w3, after w2, 7d
     
-    section GĐ2: Thực chiến (Eden Marco)
-    Tuần 4: Core LangChain & Prompting :active, w4, after w3, 7d
-    Tuần 5: Embeddings & VectorDBs     :active, w5, after w4, 7d
-    Tuần 6: Agents & Tool Calling      :active, w6, after w5, 7d
-    Tuần 7: LangGraph Fundamentals     :active, w7, after w6, 7d
-    Tuần 8: Advanced LangGraph (RAG)   :active, w8, after w7, 7d
-    Tuần 9: MCP & Multi-Agent Deploy   :active, w9, after w8, 7d
+    section GĐ2 Thực chiến
+    Tuần 4 Core LangChain Prompting :active, w4, after w3, 7d
+    Tuần 5 Embeddings VectorDBs     :active, w5, after w4, 7d
+    Tuần 6 Agents Tool Calling      :active, w6, after w5, 7d
+    Tuần 7 LangGraph Fundamentals   :active, w7, after w6, 7d
+    Tuần 8 Advanced LangGraph RAG   :active, w8, after w7, 7d
+    Tuần 9 MCP Multi-Agent Deploy   :active, w9, after w8, 7d
     
-    section GĐ3 & 4: Chứng chỉ & Project
-    Tuần 10: Lấy Chứng chỉ IBM RAG     :w10, after w9, 7d
-    Tuần 11: Project 1 (RAG Chatbot)   :w11, after w10, 7d
-    Tuần 12: Project 2 (Đội Agents)    :w12, after w11, 7d
+    section GĐ3 & 4 Chứng chỉ Project
+    Tuần 10 Lấy Chứng chỉ IBM RAG   :w10, after w9, 7d
+    Tuần 11 Project 1 RAG Chatbot   :w11, after w10, 7d
+    Tuần 12 Project 2 Đội Agents    :w12, after w11, 7d
 ```
 
 ---
