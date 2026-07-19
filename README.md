@@ -192,5 +192,5 @@ flowchart TD
 > [!WARNING]
 > - **Chứng chỉ ≠ Năng lực:** Nhà tuyển dụng đánh giá portfolio thực tế hơn tờ chứng chỉ. Nhưng chứng chỉ IBM vẫn rất tốt cho LinkedIn.
 > - **Eden Marco vs. Ed Donner:** Cả hai đều top-tier. Chọn 1 dựa trên phong cách, **ĐỪNG học cả hai** vì trùng 60%.
-> - **Thoát Tutorial Hell:** Sau khi hoàn thành GĐ2, lập tức bắt tay vào GĐ4. Đừng "cày" thêm khóa nữa.
+> - **Thoát Tutorial Hell:** Ở GĐ3, bạn chỉ nên coi các nội dung "Nên học" như tài liệu tra cứu. Hãy học chúng **song song** với việc build dự án cá nhân ở GĐ4 (áp dụng ngay vào code). Đừng thụ động ngồi cày nốt chứng chỉ rồi mới bắt đầu làm project.
 > - **LangChain cập nhật liên tục:** Luôn kết hợp đọc Docs chính thức song song với video.
